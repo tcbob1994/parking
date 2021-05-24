@@ -21,7 +21,8 @@ The vehicle stays there until you unpark it even if the server restarts.
 
 * add ensure parking to your server.cfg
 * ONLY If you are using esx_advancedgarage
-``` Comment out this part: esx_advancedgarage/server/main.lua
+``` 
+-- Comment out this part: esx_advancedgarage/server/main.lua
 -- Make sure all Vehicles are Stored on restart
 MySQL.ready(function()
 	if Config.Main.ParkVehicles then
