@@ -1,5 +1,5 @@
 # bob_parking
- ESX Parking System Version 11
+ ESX Parking System Version 12
 
 You are able to park your vehicle anywhere you like it doesnt matter on wich position.
 The vehicle stays there until you unpark it even if the server restarts.
@@ -11,9 +11,8 @@ The vehicle stays there until you unpark it even if the server restarts.
 * Hotwire Vehicles
 * Lock/Unlock Cars
 * GPS Tracking System for Cars /searchVehicle PLATE and /searchEnd
-
-* Self repairing database functions because users dont read carefully!
-* Information about wrong Configs in config.lua because users dont read carefully!
+* Self repairing database functions
+* Information about wrong Configs in config.lua
 
 ## UPDATE
 * if you are updating type /parkingupdate in chat or parkingupdate in console if you don't have a chat!!!
@@ -41,10 +40,16 @@ end)
 ```
 * AFTER that join your Server and type /parkingsetup in chat or parkingsetup in console if you don't have a chat!
 
+## Triggers
+* TriggerServerEvent('parking:setup')
+* TriggerServerEvent('parking:Update')
+* TriggerClientEvent('parking:searchVehicle', source, plate)
+* TriggerClientEvent('parking:searchEnd', source, plate)
+* TriggerClientEvent('parking:sendMessage', source, message)
 
 ## Recommended Resources for the best results: // if you know what you are doing they are Optional
 * progressBars
 
 
-## Preview Version 11
-https://www.youtube.com/watch?v=rSposQmUNWI
+## Preview [Outdated]
+https://www.youtube.com/watch?v=ClktMmmTYyQ
